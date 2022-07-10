@@ -10,11 +10,19 @@ const customJestConfig = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   moduleNameMapper: {
     // Handle module aliases (this will be automatically configured for you soon)
-    '^@/components/(.*)$': '<rootDir>/components/$1',
-
-    '^@/pages/(.*)$': '<rootDir>/pages/$1',
+    '^@components/(.*)$': '<rootDir>/src/components/$1',
+    '^@pages/(.*)$': '<rootDir>/src/pages/$1',
+    '^@api/(.*)$': '<rootDir>/src/api/$1',
+    '^@assets/(.*)$': '<rootDir>/src/assets/$1',
+    '^@constants/(.*)$': '<rootDir>/src/constants/$1',
+    '^@context/(.*)$': '<rootDir>/src/context/$1',
+    '^@pages/(.*)$': '<rootDir>/src/pages/$1',
+    '^@styles/(.*)$': '<rootDir>/src/styles/$1',
+    '^@utils/(.*)$': '<rootDir>/src/utils/$1',
+    '@style': '<rootDir>/src/styles/',
   },
   testEnvironment: 'jest-environment-jsdom',
+  snapshotSerializers: ['jest-stitches']
 }
 
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async

@@ -8,9 +8,14 @@
     "test:ci": "jest --ci"
   },
   "dependencies": {
+    "@stitches/react": "^1.2.8",
+    "dayjs": "^1.11.3",
     "next": "latest",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "react-feather": "^2.0.10",
+    "react-indiana-drag-scroll": "^2.2.0",
+    "react-query": "^3.39.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "5.16.4",
@@ -19,6 +24,7 @@
     "@types/react": "18.0.9",
     "jest": "28.1.0",
     "jest-environment-jsdom": "28.1.0",
+    "jest-stitches": "^1.0.4",
     "typescript": "4.6.4"
   }
 }
